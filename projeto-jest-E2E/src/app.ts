@@ -2,7 +2,7 @@ import http from 'node:http'
 
 // Simulação  de Banco de Dados
 
-const products =[
+const products = [
     { id: 1, name: 'Camiseta', price: 29.99 },
     { id: 2, name: 'Jaqueta', price: 129.99 },
     { id: 3, name: 'Sapato', price: 59.99 },

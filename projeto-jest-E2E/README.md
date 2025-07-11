@@ -1,4 +1,4 @@
-# Instalando O Jest
+# Instalando o Jest
 
 ```sh
 npm i jest @types/jest ts-jest tsx ts-node -D
