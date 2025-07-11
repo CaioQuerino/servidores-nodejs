@@ -1,4 +1,4 @@
-import { operations } from "./operations"
+import { operations } from "./controllers/operations.controller"
 
 describe("Operations", () => {
     let ops: operations;
