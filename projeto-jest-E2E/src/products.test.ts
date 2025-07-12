@@ -1,8 +1,5 @@
 import request from "supertest";
 import { productRoutes } from "./routes/";
-import { ControllerProducts } from "./controllers/products.controller";
-
-const controllerProducts = new ControllerProducts();
 
 describe("Products", () => {
     it("Create a product", async () => {
