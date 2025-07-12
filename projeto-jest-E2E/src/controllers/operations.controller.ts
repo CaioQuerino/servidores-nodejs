@@ -1,4 +1,4 @@
-export class operations {
+export class ControllerOperations {
     public sum(x: number, y: number): number {
         return x + y
     }

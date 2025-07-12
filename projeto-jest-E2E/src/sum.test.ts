@@ -1,10 +1,10 @@
-import { operations } from "./controllers/operations.controller"
+import { ControllerOperations } from "./controllers/operations.controller"
 
 describe("Operations", () => {
-    let ops: operations;
+    let ops: ControllerOperations;
 
     beforeEach(() => {
-        ops = new operations();
+        ops = new ControllerOperations();
     });
 
     it("sum of 3 + 7 must be 10", () => {

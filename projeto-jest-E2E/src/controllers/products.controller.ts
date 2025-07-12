@@ -1,4 +1,3 @@
-// products.controller.ts
 interface Product {
     id: number;
     name: string;
@@ -19,5 +18,5 @@ export class ControllerProducts {
 
     public findById(id: number): Product | undefined {
         return this.products.find(product => product.id === id)
-    }
+    } 
 }

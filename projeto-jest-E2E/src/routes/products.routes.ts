@@ -1,15 +1,14 @@
-// app.ts
 import http from 'node:http'
-import { ControllerProducts } from './controllers/products.controller'
+import { ControllerProducts } from '../controllers/products.controller'
 
 const controllerProducts = new ControllerProducts()
 
-// Adiciona alguns produtos iniciais
+// Adiciona alguns produtos iniciais para testes
 controllerProducts.create({ id: 1, name: 'Camiseta', price: 29.99 })
 controllerProducts.create({ id: 2, name: 'Calça', price: 59.99 })
 controllerProducts.create({ id: 3, name: "Sapato", price: 59.99 })
 
-const app = http.createServer((req, res) => {
+const ProductRoutes = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/products') {
     res.writeHead(200, { 'Content-Type': 'application/json' })
     res.end(JSON.stringify(controllerProducts.list()))
@@ -45,4 +44,4 @@ const app = http.createServer((req, res) => {
   }
 })
 
-export { app }
+export { ProductRoutes }
